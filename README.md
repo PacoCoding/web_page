@@ -1,2 +1,1 @@
-# web_page
-Web page for our app
+# mock_streamlit
