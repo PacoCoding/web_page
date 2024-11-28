@@ -1,5 +1,6 @@
 #%%
 
+
 # Import Libraries
 import streamlit as st
 import os
@@ -25,7 +26,7 @@ importlib.reload(pc)
 
 # Load environment variables
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY") or st.secrets.get("OpenAI_key")
 
 # Check API key
 if openai.api_key is None:
@@ -251,4 +252,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
