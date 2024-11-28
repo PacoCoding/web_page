@@ -27,7 +27,7 @@ importlib.reload(pc)
 # Load environment variables
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY") or st.secrets.get("OpenAI_key")
-st.write(f'openai.api_key')
+st.write(f'{openai.api_key}')
 # Check API key
 if openai.api_key is None:
     st.error("Error: OpenAI API key not found. Make sure it is set in environment variables or Streamlit secrets.")
