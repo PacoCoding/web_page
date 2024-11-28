@@ -34,7 +34,7 @@ if openai.api_key is None:
     st.stop()
 
 # Set Page Configuration
-st.set_page_config(page_title='AI Assistant', page_icon=':robot:')
+#st.set_page_config(page_title='AI Assistant', page_icon=':robot:')
 
 # Display Banner Image
 banner_path = "AI GRADIENTE VETTORIALE_page-0001.jpg"  # Update with the correct path
